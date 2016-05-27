@@ -6,6 +6,9 @@ import signal
 import sys
 import time
 
+def functionDataActuator():
+    print "Dta Actuator"
+
 def functionDataSensor():
     netdata = psutil.net_io_counters()
     data = netdata.packets_sent + netdata.packets_recv
